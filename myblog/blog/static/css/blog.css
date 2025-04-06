@@ -95,3 +95,43 @@ input[type=submit] {
   font-size:12px;
   color:#666;
 }
+
+nav {
+  display: table;
+  width: 100%;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+}
+
+.nav-row {
+  display: table-row;
+}
+
+.nav-title, .nav-tab {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+.nav-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0faf4f;
+  white-space: nowrap;
+}
+
+.nav-tab a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #0faf4f;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.nav-tab a:hover {
+  background-color: #bbb;
+}

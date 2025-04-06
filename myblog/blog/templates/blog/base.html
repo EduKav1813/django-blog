@@ -4,11 +4,21 @@
   <head>
     <title>
       {% block title %}
+
       {% endblock %}
     </title>
     <link href="{% static 'css/blog.css' %}" rel="stylesheet" />
   </head>
   <body>
+    <nav>
+      <div class="nav-row">
+        <div class="nav-title">Navigation</div>
+        <div class="nav-tab">
+          <a href="{% url 'blog:post_list' %}">Home</a>
+        </div>
+      </div>
+    </nav>
+
     <div id="content">
       {% block content %}
 
